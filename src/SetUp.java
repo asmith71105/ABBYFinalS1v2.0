@@ -1,59 +1,39 @@
+//This class sets up all the methods that the primary brain method, Calculate, will call based on the input
+
 public class SetUp
 {
-    public static double value1;
-    public double value2;
-    public String operator;
+    // Methods ---------------------------------------------------------------------------------------------------------
 
-    //Methods
-    public double calcAdd(double value1, String operator, double value2)
+    //This method will perform the addition process of a calculator
+    public static int calcAdd(int value1, String operator, int value2)
     {
-        return value1 + value2;
+        return MethodCreation.sum;
     }
 
-    public double calcSub(double value1, String operator, double value2)
+    //This method will perform the subtraction process of a calculator
+    public static int calcSub(int value1, String operator, int value2)
     {
-        return value1 - value2;
+        return MethodCreation.diff;
     }
 
-    public double calcMult(double value1, String operator, double value2)
+    //This method will perform the multiplication process of a calculator
+    public static int calcMult(int value1, String operator, int value2)
     {
-        return value1 * value2;
+        return MethodCreation.product;
     }
 
-    public double calcDivi(double value1, String operator, double value2)
+    //This method will perform the division process of a calculator
+    public static int calcDivi(int value1, String operator, int value2)
     {
-        return value1 / value2;
+        return MethodCreation.quotient;
     }
 
-    //Getters
-    public double getValue1()
+    //This method will display an error for expressions that do not produce a valid sum/difference/product/quotient,
+    // such as "5/0"
+    public static String calcError(int value1, String operator, int value2)
     {
-        return value1;
+        return "Error";
     }
 
-    public double getValue2()
-    {
-        return value2;
-    }
-
-    public String getOperator()
-    {
-        return operator;
-    }
-
-    //Setters
-    public void setValue1(double value1)
-    {
-        this.value1 = value1;
-    }
-
-    public void setValue2(double value2)
-    {
-        this.value2 = value2;
-    }
-
-    public void setOperator(String operator)
-    {
-        this.operator = operator;
-    }
+    //------------------------------------------------------------------------------------------------------------------
 }
