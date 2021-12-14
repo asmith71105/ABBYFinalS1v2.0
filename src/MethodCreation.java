@@ -3,28 +3,27 @@
 
 public class MethodCreation
 {
-    //Variables
-    public static int sum = Expression.value1 + Expression.value2;
-    public static int diff = Expression.value1 - Expression.value2;
-    public static int product = Expression.value1 * Expression.value2;
-    public static int quotient = Expression.value1 / Expression.value2;
-
     //Brain Methods
+    public static void main(String[] args)
+    {
+
+    }
+
     public static int Calculate(Expression expression1)
     {
-        if (Expression.getOperator().equals("+"))
+        if (Expression.getOperator().equals(Expression.operators[0]))
         {
             SetUp.calcAdd(Expression.value1, Expression.operator, Expression.value2);
         }
-        else if (Expression.getOperator().equals("-"))
+        else if (Expression.getOperator().equals(Expression.operators[1]))
         {
             SetUp.calcSub(Expression.value1, Expression.operator, Expression.value2);
         }
-        else if (Expression.getOperator().equals("*"))
+        else if (Expression.getOperator().equals(Expression.operators[2]))
         {
             SetUp.calcMult(Expression.value1, Expression.operator, Expression.value2);
         }
-        else if (Expression.getOperator().equals("/"))
+        else if (Expression.getOperator().equals(Expression.operators[3]))
         {
             if(Expression.getValue1() < 0 && Expression.getValue2() == 0 || Expression.getValue1() > 0 && Expression.getValue2() == 0)
             {

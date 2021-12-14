@@ -7,25 +7,25 @@ public class SetUp
     //This method will perform the addition process of a calculator
     public static int calcAdd(int value1, String operator, int value2)
     {
-        return MethodCreation.sum;
+        return Expression.value1 + Expression.value2;
     }
 
     //This method will perform the subtraction process of a calculator
     public static int calcSub(int value1, String operator, int value2)
     {
-        return MethodCreation.diff;
+        return Expression.value1 - Expression.value2;
     }
 
     //This method will perform the multiplication process of a calculator
     public static int calcMult(int value1, String operator, int value2)
     {
-        return MethodCreation.product;
+        return Expression.value1 * Expression.value2;
     }
 
     //This method will perform the division process of a calculator
     public static int calcDivi(int value1, String operator, int value2)
     {
-        return MethodCreation.quotient;
+        return Expression.value1 / Expression.value2;
     }
 
     //This method will display an error for expressions that do not produce a valid sum/difference/product/quotient,

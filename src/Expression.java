@@ -5,6 +5,8 @@ public class Expression
     public static int value2;
     public static String operator;
 
+    public static String[] operators = {"+", "-", "*", "/"};
+
 
     //Constructors
     public Expression(int value1, String operator, int value2)
