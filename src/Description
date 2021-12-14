@@ -1,0 +1,6 @@
+Description:
+This program is a simple calculator. It includes the addition, subtraction, multiplication, and division operations. It is a remastered version of my CSP final, but this
+time it is functional. It includes three student-designed classes, and Interface, and a driver class. The goal of the program is simply to get an answer to an expression.
+
+How to Use: Enter the Driver class. Enter your desired values into the Expression expression1 parameters, then insert the values as parameters of your desired method, which can be calcAdd,
+calcSub, calcMult, or calcDivi. Finally, run
